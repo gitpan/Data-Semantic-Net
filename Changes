@@ -1,0 +1,20 @@
+---
+global:
+  name: Data-Semantic-Net
+releases:
+  - author: 'Marcel Gruenauer <marcel@cpan.org>'
+    changes:
+      - original version
+      - 'Makefile.PL: fixed requirements'
+      - 'Data::Semantic::Net::IPAddress::IPv4_TEST: instead of defining values itself, it inherits also from Data::Semantic::Net::IPAddress::TestData::IPv4'
+      - 'Data::Semantic::Net::IPAddress: add boolean accessor forbid_internal(), is_valid_normalized_value() uses it'
+      - updated MANIFEST
+      - added lib/Data/Semantic/Net/IPAddress/IPv6_TEST.pm
+      - added lib/Data/Semantic/Net/IPAddress/TestData
+      - getting rid of the distinction between well-formedness and validity. Only validity remains
+      - Data::Semantic::Base is no more; use Data::Semantic instead
+      - added documentation
+      - updated t/perlcriticrc
+    date: 2007-11-21T18:22:09Z
+    tags: []
+    version: 0.01
