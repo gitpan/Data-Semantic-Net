@@ -4,7 +4,7 @@ use strict;
 use warnings;
 
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 
 use base qw(Data::Semantic);
@@ -87,7 +87,7 @@ please use the C<datasemanticnet> tag.
 
 =head1 VERSION 
                    
-This document describes version 0.01 of L<Data::Semantic::Net>.
+This document describes version 0.02 of L<Data::Semantic::Net>.
 
 =head1 BUGS AND LIMITATIONS
 

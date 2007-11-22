@@ -5,7 +5,7 @@ use warnings;
 use Net::IP qw/ip_is_ipv4 ip_iptype ip_iptobin/;
 
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 
 use base qw(Data::Semantic::Net::IPAddress);
@@ -113,7 +113,7 @@ please use the C<datasemanticnet> tag.
 
 =head1 VERSION 
                    
-This document describes version 0.01 of L<Data::Semantic::Net::IPAddress::IPv4>.
+This document describes version 0.02 of L<Data::Semantic::Net::IPAddress::IPv4>.
 
 =head1 BUGS AND LIMITATIONS
 
