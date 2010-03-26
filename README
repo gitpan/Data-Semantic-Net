@@ -1,27 +1,46 @@
-This is the Perl distribution Data-Semantic-Net.
+NAME
+    Data::Semantic::Net - Semantic data classes for net-related data
+
+VERSION
+    version 1.100850
+
+DESCRIPTION
+    This class is a base class for net-related semantic data classes. The
+    following classes are available:
+
+    IPv4
+        See Data::Semantic::Net::IPAddress::IPv4.
+
+    IPv6
+        See Data::Semantic::Net::IPAddress::IPv6.
 
 INSTALLATION
+    See perlmodinstall for information and options on installing Perl
+    modules.
 
-Data-Semantic-Net installation is straightforward. If your CPAN shell is set
-up, you should just be able to do
+BUGS AND LIMITATIONS
+    No bugs have been reported.
 
-    % cpan Data::Semantic::Net
+    Please report any bugs or feature requests through the web interface at
+    <http://rt.cpan.org/Public/Dist/Display.html?Name=Data-Semantic-Net>.
 
-Download it, unpack it, then build it as per the usual:
+AVAILABILITY
+    The latest version of this module is available from the Comprehensive
+    Perl Archive Network (CPAN). Visit <http://www.perl.com/CPAN/> to find a
+    CPAN site near you, or see
+    <http://search.cpan.org/dist/Data-Semantic-Net/>.
 
-    % perl Makefile.PL
-    % make && make test
+    The development version lives at
+    <http://github.com/hanekomu/Data-Semantic-Net/>. Instead of sending
+    patches, please fork this project using the standard git and github
+    infrastructure.
 
-Then install it:
+AUTHOR
+      Marcel Gruenauer <marcel@cpan.org>
 
-    % make install
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2007 by Marcel Gruenauer.
 
-DOCUMENTATION
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
 
-Data-Semantic-Net documentation is available as in POD. So you can do:
-
-    % perldoc Data::Semantic::Net
-
-to read the documentation online with your favorite pager.
-
-Marcel Gruenauer
