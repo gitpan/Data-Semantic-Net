@@ -3,7 +3,9 @@ use strict;
 use warnings;
 
 package Data::Semantic::Net::IPAddress::IPv6_TEST;
-our $VERSION = '1.100850';
+BEGIN {
+  $Data::Semantic::Net::IPAddress::IPv6_TEST::VERSION = '1.101610';
+}
 # ABSTRACT: Test companion class for the IPv6 address semantic data class
 use parent qw(
   Data::Semantic::Test
@@ -21,7 +23,7 @@ Data::Semantic::Net::IPAddress::IPv6_TEST - Test companion class for the IPv6 ad
 
 =head1 VERSION
 
-version 1.100850
+version 1.101610
 
 =head1 DESCRIPTION
 
@@ -37,7 +39,7 @@ See perlmodinstall for information and options on installing Perl modules.
 No bugs have been reported.
 
 Please report any bugs or feature requests through the web interface at
-L<http://rt.cpan.org/Public/Dist/Display.html?Name=Data-Semantic-Net>.
+L<http://rt.cpan.org>.
 
 =head1 AVAILABILITY
 

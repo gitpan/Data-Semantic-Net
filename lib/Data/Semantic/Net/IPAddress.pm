@@ -3,7 +3,9 @@ use strict;
 use warnings;
 
 package Data::Semantic::Net::IPAddress;
-our $VERSION = '1.100850';
+BEGIN {
+  $Data::Semantic::Net::IPAddress::VERSION = '1.101610';
+}
 # ABSTRACT: Base class for IP address semantic data classes
 use parent qw(Data::Semantic::Net);
 __PACKAGE__
@@ -15,6 +17,7 @@ sub is_valid_normalized_value {
     return unless $self->SUPER::is_valid_normalized_value($value);
     $self->forbid_internal ? !$self->is_internal($value) : 1;
 }
+
 1;
 
 
@@ -27,7 +30,7 @@ Data::Semantic::Net::IPAddress - Base class for IP address semantic data classes
 
 =head1 VERSION
 
-version 1.100850
+version 1.101610
 
 =head1 DESCRIPTION
 
@@ -49,7 +52,7 @@ See perlmodinstall for information and options on installing Perl modules.
 No bugs have been reported.
 
 Please report any bugs or feature requests through the web interface at
-L<http://rt.cpan.org/Public/Dist/Display.html?Name=Data-Semantic-Net>.
+L<http://rt.cpan.org>.
 
 =head1 AVAILABILITY
 

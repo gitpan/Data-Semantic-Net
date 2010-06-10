@@ -3,7 +3,9 @@ use strict;
 use warnings;
 
 package Data::Semantic::Net::IPAddress::IPv6;
-our $VERSION = '1.100850';
+BEGIN {
+  $Data::Semantic::Net::IPAddress::IPv6::VERSION = '1.101610';
+}
 # ABSTRACT: Semantic data class for IPv6 addresses
 use Net::IP qw/ip_is_ipv6 ip_iptype/;
 use parent qw(Data::Semantic::Net::IPAddress);
@@ -30,7 +32,7 @@ Data::Semantic::Net::IPAddress::IPv6 - Semantic data class for IPv6 addresses
 
 =head1 VERSION
 
-version 1.100850
+version 1.101610
 
 =head1 SYNOPSIS
 
@@ -64,7 +66,7 @@ See perlmodinstall for information and options on installing Perl modules.
 No bugs have been reported.
 
 Please report any bugs or feature requests through the web interface at
-L<http://rt.cpan.org/Public/Dist/Display.html?Name=Data-Semantic-Net>.
+L<http://rt.cpan.org>.
 
 =head1 AVAILABILITY
 

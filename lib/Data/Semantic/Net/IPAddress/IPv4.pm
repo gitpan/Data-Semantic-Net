@@ -3,9 +3,11 @@ use strict;
 use warnings;
 
 package Data::Semantic::Net::IPAddress::IPv4;
-our $VERSION = '1.100850';
+BEGIN {
+  $Data::Semantic::Net::IPAddress::IPv4::VERSION = '1.101610';
+}
 # ABSTRACT: Semantic data class for IPv4 addresses
-use Net::IP qw/ip_is_ipv4 ip_iptype ip_iptobin/;
+use Net::IP qw(ip_is_ipv4 ip_iptype ip_iptobin);
 use parent qw(Data::Semantic::Net::IPAddress);
 
 sub is_valid_normalized_value {
@@ -27,6 +29,15 @@ sub is_internal {
     my $type = ip_iptype(ip_iptobin($value, 4), 4) || 'PUBLIC';
     $type ne 'PUBLIC';
 }
+
+sub normalize {
+    my ($self, $value) = @_;
+    return undef unless (my @dummy = split(/\./, $value)) == 4;
+    # omit leading zeroes in octets, e.g., 213.160.065.064 -> 213.160.65.64
+    my $ip = Net::IP->new($value) or die Net::IP::Error();
+    $ip->ip;
+}
+
 1;
 
 
@@ -39,7 +50,7 @@ Data::Semantic::Net::IPAddress::IPv4 - Semantic data class for IPv4 addresses
 
 =head1 VERSION
 
-version 1.100850
+version 1.101610
 
 =head1 SYNOPSIS
 
@@ -73,7 +84,7 @@ See perlmodinstall for information and options on installing Perl modules.
 No bugs have been reported.
 
 Please report any bugs or feature requests through the web interface at
-L<http://rt.cpan.org/Public/Dist/Display.html?Name=Data-Semantic-Net>.
+L<http://rt.cpan.org>.
 
 =head1 AVAILABILITY
 

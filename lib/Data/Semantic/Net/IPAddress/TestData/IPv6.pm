@@ -3,7 +3,9 @@ use strict;
 use warnings;
 
 package Data::Semantic::Net::IPAddress::TestData::IPv6;
-our $VERSION = '1.100850';
+BEGIN {
+  $Data::Semantic::Net::IPAddress::TestData::IPv6::VERSION = '1.101610';
+}
 # ABSTRACT: Test data class for the IPv4 address semantic data class
 use constant TESTDATA => (
     {   args  => {},
@@ -42,7 +44,7 @@ Data::Semantic::Net::IPAddress::TestData::IPv6 - Test data class for the IPv4 ad
 
 =head1 VERSION
 
-version 1.100850
+version 1.101610
 
 =head1 DESCRIPTION
 
@@ -60,7 +62,7 @@ See perlmodinstall for information and options on installing Perl modules.
 No bugs have been reported.
 
 Please report any bugs or feature requests through the web interface at
-L<http://rt.cpan.org/Public/Dist/Display.html?Name=Data-Semantic-Net>.
+L<http://rt.cpan.org>.
 
 =head1 AVAILABILITY
 
