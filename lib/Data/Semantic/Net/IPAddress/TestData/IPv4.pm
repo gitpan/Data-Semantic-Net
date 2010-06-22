@@ -4,11 +4,11 @@ use warnings;
 
 package Data::Semantic::Net::IPAddress::TestData::IPv4;
 BEGIN {
-  $Data::Semantic::Net::IPAddress::TestData::IPv4::VERSION = '1.101610';
+  $Data::Semantic::Net::IPAddress::TestData::IPv4::VERSION = '1.101730';
 }
 # ABSTRACT: Test data class for the IPv4 address semantic data class
 use constant TESTDATA => (
-    {   args  => {},
+    {   args  => { forbid_internal => 0 },
         valid => [
             qw(
               127.0.0.1
@@ -55,7 +55,7 @@ Data::Semantic::Net::IPAddress::TestData::IPv4 - Test data class for the IPv4 ad
 
 =head1 VERSION
 
-version 1.101610
+version 1.101730
 
 =head1 DESCRIPTION
 

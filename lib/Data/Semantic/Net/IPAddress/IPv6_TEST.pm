@@ -4,7 +4,7 @@ use warnings;
 
 package Data::Semantic::Net::IPAddress::IPv6_TEST;
 BEGIN {
-  $Data::Semantic::Net::IPAddress::IPv6_TEST::VERSION = '1.101610';
+  $Data::Semantic::Net::IPAddress::IPv6_TEST::VERSION = '1.101730';
 }
 # ABSTRACT: Test companion class for the IPv6 address semantic data class
 use parent qw(
@@ -23,7 +23,7 @@ Data::Semantic::Net::IPAddress::IPv6_TEST - Test companion class for the IPv6 ad
 
 =head1 VERSION
 
-version 1.101610
+version 1.101730
 
 =head1 DESCRIPTION
 

@@ -1,5 +1,9 @@
 Revision history for Perl extension Data-Semantic-Net
 
+1.101730  2010-06-22 14:27:43 Europe/Vienna
+    - Data::Semantic::Net::IPAddress::TestData::IPv4: specifically add
+      'forbid_internal => 0' where appropriate now that the default is 1
+
 1.101610  2010-06-10 21:55:48 Europe/Vienna
     - added normalize() to Data::Semantic::Net::IPAddress::IPv4, also test data
 

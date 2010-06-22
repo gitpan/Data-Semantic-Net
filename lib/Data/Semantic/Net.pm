@@ -4,7 +4,7 @@ use warnings;
 
 package Data::Semantic::Net;
 BEGIN {
-  $Data::Semantic::Net::VERSION = '1.101610';
+  $Data::Semantic::Net::VERSION = '1.101730';
 }
 # ABSTRACT: Semantic data classes for net-related data
 use parent qw(Data::Semantic);
@@ -20,7 +20,7 @@ Data::Semantic::Net - Semantic data classes for net-related data
 
 =head1 VERSION
 
-version 1.101610
+version 1.101730
 
 =head1 DESCRIPTION
 

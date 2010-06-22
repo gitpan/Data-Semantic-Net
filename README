@@ -2,7 +2,7 @@ NAME
     Data::Semantic::Net - Semantic data classes for net-related data
 
 VERSION
-    version 1.101610
+    version 1.101730
 
 DESCRIPTION
     This class is a base class for net-related semantic data classes. The

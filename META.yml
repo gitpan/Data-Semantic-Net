@@ -22,28 +22,28 @@ name: Data-Semantic-Net
 provides:
   Data::Semantic::Net:
     file: lib/Data/Semantic/Net.pm
-    version: 1.101610
+    version: 1.101730
   Data::Semantic::Net::IPAddress:
     file: lib/Data/Semantic/Net/IPAddress.pm
-    version: 1.101610
+    version: 1.101730
   Data::Semantic::Net::IPAddress::IPv4:
     file: lib/Data/Semantic/Net/IPAddress/IPv4.pm
-    version: 1.101610
+    version: 1.101730
   Data::Semantic::Net::IPAddress::IPv4_TEST:
     file: lib/Data/Semantic/Net/IPAddress/IPv4_TEST.pm
-    version: 1.101610
+    version: 1.101730
   Data::Semantic::Net::IPAddress::IPv6:
     file: lib/Data/Semantic/Net/IPAddress/IPv6.pm
-    version: 1.101610
+    version: 1.101730
   Data::Semantic::Net::IPAddress::IPv6_TEST:
     file: lib/Data/Semantic/Net/IPAddress/IPv6_TEST.pm
-    version: 1.101610
+    version: 1.101730
   Data::Semantic::Net::IPAddress::TestData::IPv4:
     file: lib/Data/Semantic/Net/IPAddress/TestData/IPv4.pm
-    version: 1.101610
+    version: 1.101730
   Data::Semantic::Net::IPAddress::TestData::IPv6:
     file: lib/Data/Semantic/Net/IPAddress/TestData/IPv6.pm
-    version: 1.101610
+    version: 1.101730
 requires:
   Data::Semantic: 0
   Data::Semantic::Test: 0
@@ -56,4 +56,4 @@ resources:
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=Data-Semantic-Net
   homepage: http://search.cpan.org/dist/Data-Semantic-Net/
   repository: http://github.com/hanekomu/Data-Semantic-Net
-version: 1.101610
+version: 1.101730
