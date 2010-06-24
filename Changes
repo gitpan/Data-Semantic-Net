@@ -1,5 +1,9 @@
 Revision history for Perl extension Data-Semantic-Net
 
+1.101750  2010-06-24 12:49:16 Europe/Vienna
+    - improved checking whether an IPv6 address is internal
+    - added IPv6 test data, also normalization tests
+
 1.101730  2010-06-22 14:27:43 Europe/Vienna
     - Data::Semantic::Net::IPAddress::TestData::IPv4: specifically add
       'forbid_internal => 0' where appropriate now that the default is 1

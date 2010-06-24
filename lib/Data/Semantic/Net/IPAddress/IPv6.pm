@@ -4,7 +4,7 @@ use warnings;
 
 package Data::Semantic::Net::IPAddress::IPv6;
 BEGIN {
-  $Data::Semantic::Net::IPAddress::IPv6::VERSION = '1.101730';
+  $Data::Semantic::Net::IPAddress::IPv6::VERSION = '1.101750';
 }
 # ABSTRACT: Semantic data class for IPv6 addresses
 use Net::IP qw/ip_is_ipv6 ip_iptype/;
@@ -18,8 +18,18 @@ sub is_valid_normalized_value {
 sub is_internal {
     my ($self, $value) = @_;
     return unless defined $value;
-    (ip_iptype($value, 6) || '') eq 'GLOBAL-UNICAST';
+    my $ip = Net::IP->new($value);
+    return unless $ip;
+    $ip->iptype ne 'GLOBAL-UNICAST';
 }
+
+sub normalize {
+    my ($self, $value) = @_;
+    my $ip = Net::IP->new($value);
+    return undef unless $ip;
+    $ip->short;
+}
+
 1;
 
 
@@ -32,7 +42,7 @@ Data::Semantic::Net::IPAddress::IPv6 - Semantic data class for IPv6 addresses
 
 =head1 VERSION
 
-version 1.101730
+version 1.101750
 
 =head1 SYNOPSIS
 

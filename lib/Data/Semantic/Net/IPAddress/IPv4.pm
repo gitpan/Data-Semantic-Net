@@ -4,7 +4,7 @@ use warnings;
 
 package Data::Semantic::Net::IPAddress::IPv4;
 BEGIN {
-  $Data::Semantic::Net::IPAddress::IPv4::VERSION = '1.101730';
+  $Data::Semantic::Net::IPAddress::IPv4::VERSION = '1.101750';
 }
 # ABSTRACT: Semantic data class for IPv4 addresses
 use Net::IP qw(ip_is_ipv4 ip_iptype ip_iptobin);
@@ -50,7 +50,7 @@ Data::Semantic::Net::IPAddress::IPv4 - Semantic data class for IPv4 addresses
 
 =head1 VERSION
 
-version 1.101730
+version 1.101750
 
 =head1 SYNOPSIS
 
