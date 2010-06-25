@@ -4,7 +4,7 @@ use warnings;
 
 package Data::Semantic::Net::IPAddress::TestData::IPv6;
 BEGIN {
-  $Data::Semantic::Net::IPAddress::TestData::IPv6::VERSION = '1.101750';
+  $Data::Semantic::Net::IPAddress::TestData::IPv6::VERSION = '1.101760';
 }
 
 # ABSTRACT: Test data class for the IPv4 address semantic data class
@@ -171,7 +171,7 @@ Data::Semantic::Net::IPAddress::TestData::IPv6 - Test data class for the IPv4 ad
 
 =head1 VERSION
 
-version 1.101750
+version 1.101760
 
 =head1 DESCRIPTION
 

@@ -4,11 +4,19 @@ use warnings;
 
 package Data::Semantic::Net::IPAddress::IPv4;
 BEGIN {
-  $Data::Semantic::Net::IPAddress::IPv4::VERSION = '1.101750';
+  $Data::Semantic::Net::IPAddress::IPv4::VERSION = '1.101760';
 }
 # ABSTRACT: Semantic data class for IPv4 addresses
 use Net::IP qw(ip_is_ipv4 ip_iptype ip_iptobin);
 use parent qw(Data::Semantic::Net::IPAddress);
+
+# update RESERVED IPv4 ranges according to RFC 5737
+my @ranges = qw(198.51.100.0/24 203.0.113.0/24);
+for my $range (@ranges) {
+    my $ip = Net::IP->new($range) or die Net::IP::Error();
+    my $prefix = substr $ip->binip, 0, $ip->prefixlen;
+    $Net::IP::IPv4ranges{ $prefix } = 'RESERVED';
+}
 
 sub is_valid_normalized_value {
     my ($self, $value) = @_;
@@ -50,7 +58,7 @@ Data::Semantic::Net::IPAddress::IPv4 - Semantic data class for IPv4 addresses
 
 =head1 VERSION
 
-version 1.101750
+version 1.101760
 
 =head1 SYNOPSIS
 

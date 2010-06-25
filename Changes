@@ -1,5 +1,7 @@
 Revision history for Perl extension Data-Semantic-Net
 
+1.101760  2010-06-25 12:52:32 Europe/Vienna
+
 1.101750  2010-06-24 12:49:16 Europe/Vienna
     - improved checking whether an IPv6 address is internal
     - added IPv6 test data, also normalization tests

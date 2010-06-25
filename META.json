@@ -45,35 +45,35 @@
    "provides" : {
       "Data::Semantic::Net" : {
          "file" : "lib/Data/Semantic/Net.pm",
-         "version" : "1.101750"
+         "version" : "1.101760"
       },
       "Data::Semantic::Net::IPAddress" : {
          "file" : "lib/Data/Semantic/Net/IPAddress.pm",
-         "version" : "1.101750"
+         "version" : "1.101760"
       },
       "Data::Semantic::Net::IPAddress::IPv4" : {
          "file" : "lib/Data/Semantic/Net/IPAddress/IPv4.pm",
-         "version" : "1.101750"
+         "version" : "1.101760"
       },
       "Data::Semantic::Net::IPAddress::IPv4_TEST" : {
          "file" : "lib/Data/Semantic/Net/IPAddress/IPv4_TEST.pm",
-         "version" : "1.101750"
+         "version" : "1.101760"
       },
       "Data::Semantic::Net::IPAddress::IPv6" : {
          "file" : "lib/Data/Semantic/Net/IPAddress/IPv6.pm",
-         "version" : "1.101750"
+         "version" : "1.101760"
       },
       "Data::Semantic::Net::IPAddress::IPv6_TEST" : {
          "file" : "lib/Data/Semantic/Net/IPAddress/IPv6_TEST.pm",
-         "version" : "1.101750"
+         "version" : "1.101760"
       },
       "Data::Semantic::Net::IPAddress::TestData::IPv4" : {
          "file" : "lib/Data/Semantic/Net/IPAddress/TestData/IPv4.pm",
-         "version" : "1.101750"
+         "version" : "1.101760"
       },
       "Data::Semantic::Net::IPAddress::TestData::IPv6" : {
          "file" : "lib/Data/Semantic/Net/IPAddress/TestData/IPv6.pm",
-         "version" : "1.101750"
+         "version" : "1.101760"
       }
    },
    "release_status" : "stable",
@@ -87,6 +87,6 @@
          "url" : "http://github.com/hanekomu/Data-Semantic-Net"
       }
    },
-   "version" : "1.101750"
+   "version" : "1.101760"
 }
 

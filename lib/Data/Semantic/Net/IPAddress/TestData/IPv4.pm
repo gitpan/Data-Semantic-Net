@@ -4,7 +4,7 @@ use warnings;
 
 package Data::Semantic::Net::IPAddress::TestData::IPv4;
 BEGIN {
-  $Data::Semantic::Net::IPAddress::TestData::IPv4::VERSION = '1.101750';
+  $Data::Semantic::Net::IPAddress::TestData::IPv4::VERSION = '1.101760';
 }
 # ABSTRACT: Test data class for the IPv4 address semantic data class
 use constant TESTDATA => (
@@ -15,6 +15,15 @@ use constant TESTDATA => (
               131.130.249.31
               10.0.1.3
               192.168.1.3
+              198.51.100.0
+              198.51.100.23
+              198.51.100.255
+              203.0.113.0
+              203.0.113.23
+              203.0.113.255
+              192.0.2.0
+              192.0.2.23
+              192.0.2.255
               )
         ],
         invalid => [
@@ -39,6 +48,15 @@ use constant TESTDATA => (
               127.0.0.1
               10.0.1.3
               192.168.1.3
+              198.51.100.0
+              198.51.100.23
+              198.51.100.255
+              203.0.113.0
+              203.0.113.23
+              203.0.113.255
+              192.0.2.0
+              192.0.2.23
+              192.0.2.255
               )
         ],
     },
@@ -55,7 +73,7 @@ Data::Semantic::Net::IPAddress::TestData::IPv4 - Test data class for the IPv4 ad
 
 =head1 VERSION
 
-version 1.101750
+version 1.101760
 
 =head1 DESCRIPTION
 

@@ -4,7 +4,7 @@ use warnings;
 
 package Data::Semantic::Net::IPAddress;
 BEGIN {
-  $Data::Semantic::Net::IPAddress::VERSION = '1.101750';
+  $Data::Semantic::Net::IPAddress::VERSION = '1.101760';
 }
 # ABSTRACT: Base class for IP address semantic data classes
 use parent qw(Data::Semantic::Net);
@@ -30,7 +30,7 @@ Data::Semantic::Net::IPAddress - Base class for IP address semantic data classes
 
 =head1 VERSION
 
-version 1.101750
+version 1.101760
 
 =head1 DESCRIPTION
 

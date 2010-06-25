@@ -4,7 +4,7 @@ use warnings;
 
 package Data::Semantic::Net::IPAddress::IPv4_TEST;
 BEGIN {
-  $Data::Semantic::Net::IPAddress::IPv4_TEST::VERSION = '1.101750';
+  $Data::Semantic::Net::IPAddress::IPv4_TEST::VERSION = '1.101760';
 }
 
 use Test::More;
@@ -27,7 +27,7 @@ Data::Semantic::Net::IPAddress::IPv4_TEST - Test companion class for the IPv4 ad
 
 =head1 VERSION
 
-version 1.101750
+version 1.101760
 
 =head1 DESCRIPTION
 
